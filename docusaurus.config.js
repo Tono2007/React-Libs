@@ -1,56 +1,56 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const constants = require("./src/constants");
+const constants = require('./src/constants');
 
-const lightCodeTheme = require("prism-react-renderer/themes/nightOwl");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "React-Libs",
+  title: 'React-Libs',
   tagline:
-    "Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.",
+    'Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.',
   url: constants.siteData.siteUrl,
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "React-Libs", // Usually your GitHub org/user name.
-  projectName: "React-Libs", // Usually your repo name.
+  organizationName: 'React-Libs', // Usually your GitHub org/user name.
+  projectName: 'React-Libs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "es",
-    locales: ["en"],
+    defaultLocale: 'es',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -60,14 +60,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "light",
+        defaultMode: 'light',
       },
       navbar: {
-        title: "React Libs",
+        title: 'React Libs',
         logo: {
-          alt: "React Libs",
-          src: "img/LogoFiles/color-logo.png",
-          srcDark: "img/LogoFiles/color-logo.png",
+          alt: 'React Libs',
+          src: 'img/LogoFiles/color-logo.png',
+          srcDark: 'img/LogoFiles/color-logo.png',
           height: 100,
         },
         hideOnScroll: false,
@@ -79,50 +79,38 @@ const config = {
             label: "Docs",
           }, */
           {
-            type: "dropdown",
-            label: "Docs",
-            position: "left",
-            to: "/docs/intro",
+            type: 'dropdown',
+            label: 'Docs',
+            position: 'left',
+            to: '/docs/',
             items: [
-              {
-                label: "React",
-                href: "https://www.facebook.com",
-              },
-              {
-                label: "JS",
-                href: "https://www.facebook.com",
-              },
-              {
-                label: "HTML",
-                href: "https://www.facebook.com",
-              },
-              {
-                label: "CSS",
-                href: "https://www.facebook.com",
-              },
+              { to: '/docs/category/react', label: 'React' },
+              { to: '/docs/category/javascript', label: 'Javascript' },
+              { to: '/docs/category/html', label: 'HTML' },
+              { to: '/docs/category/css', label: 'CSS' },
             ],
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/contributors", label: "Contribuidores", position: "left" },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/contributors', label: 'Contribuidores', position: 'left' },
 
           {
-            type: "localeDropdown",
-            position: "right",
+            type: 'localeDropdown',
+            position: 'right',
             dropdownItemsAfter: [
               {
-                to: "https://github.com/Tono2007/React-Libs",
-                label: "Help us translate",
+                to: constants.siteData.siteRepo,
+                label: 'Help us translate',
               },
             ],
           },
           {
-            type: "search",
-            position: "right",
+            type: 'search',
+            position: 'right',
           },
           {
-            href: "https://github.com/Tono2007/React-Libs",
-            label: "GitHub",
-            position: "right",
+            href: constants.siteData.siteRepo,
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
@@ -133,39 +121,27 @@ const config = {
       footer: {
         links: [
           {
-            title: "Docs",
+            title: 'Docs',
             items: [
-              {
-                label: "React",
-                to: "/docs/intro",
-              },
-              {
-                label: "JS",
-                to: "/docs/intro",
-              },
-              {
-                label: "HTML",
-                to: "/docs/intro",
-              },
-              {
-                label: "CSS",
-                to: "/docs/intro",
-              },
+              { to: '/docs/category/react', label: 'React' },
+              { to: '/docs/category/javascript', label: 'Javascript' },
+              { to: '/docs/category/html', label: 'HTML' },
+              { to: '/docs/category/css', label: 'CSS' },
             ],
           },
           {
-            title: "Comunidad",
+            title: 'Comunidad',
             items: [
               {
-                label: "Ayudanos",
+                label: 'Ayudanos',
                 href: constants.siteData.siteRepo,
               },
               {
-                label: "Contribuidores",
-                to: "/contributors",
+                label: 'Contribuidores',
+                to: '/contributors',
               },
               {
-                label: "Issues",
+                label: 'Issues',
                 href: constants.siteData.repoIssues,
               },
               /* {
@@ -178,14 +154,14 @@ const config = {
             ],
           },
           {
-            title: "Mas",
+            title: 'Mas',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: 'Blog',
+                to: '/blog',
               },
               {
-                label: "GitHub",
+                label: 'GitHub',
                 href: constants.siteData.siteRepo,
               },
               {
@@ -201,12 +177,12 @@ const config = {
           },
         ],
         logo: {
-          alt: "React Libs",
-          src: "img/logo.svg",
-          srcDark: "img/LogoFiles/logo-white-no-background.png",
+          alt: 'React Libs',
+          src: 'img/logo.svg',
+          srcDark: 'img/LogoFiles/logo-white-no-background.png',
           height: 200,
         },
-        copyright: `React Libs • ${new Date().getFullYear()}, Built with Docusaurus.`,
+        copyright: `React Libs • Open Source • ${new Date().getFullYear()}, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

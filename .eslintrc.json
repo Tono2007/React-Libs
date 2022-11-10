@@ -1,0 +1,27 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "es2021": true,
+    "commonjs": true
+  },
+  "extends": ["plugin:prettier/recommended", "plugin:@docusaurus/recommended"],
+  "plugins": ["prettier", "@docusaurus"],
+  "rules": {
+    "semi": "warn",
+    /* "@docusaurus/string-literal-i18n-messages": "error",
+    "@docusaurus/no-untranslated-text": "warn", */
+    "prettier/prettier": "error"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": "latest"
+  }
+}

@@ -1,11 +1,11 @@
-import React from "react";
-import clsx from "clsx";
-import styles from "./styles.module.css";
+import React from 'react';
+import clsx from 'clsx';
+import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: "Mejora",
-    Svg: require("@site/static/img/home/react.svg").default,
+    title: 'Mejora',
+    Svg: require('@site/static/img/home/react.svg').default,
     description: (
       <>
         Mejora tu nivel de desarrollo de React. Encuentra informacion util,
@@ -14,8 +14,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Facil de usar",
-    Svg: require("@site/static/img/home/team.svg").default,
+    title: 'Facil de usar',
+    Svg: require('@site/static/img/home/team.svg').default,
 
     description: (
       <>
@@ -26,15 +26,15 @@ const FeatureList = [
     ),
   },
   {
-    title: "Comunidad",
-    Svg: require("@site/static/img/home/writer.svg").default,
+    title: 'Comunidad',
+    Svg: require('@site/static/img/home/writer.svg').default,
     description: (
       <>Contenido gratuito creado por la comunidad de desarrolladores web.</>
     ),
   },
   {
-    title: "Optimiza",
-    Svg: require("@site/static/img/home/elements.svg").default,
+    title: 'Optimiza',
+    Svg: require('@site/static/img/home/elements.svg').default,
     description: (
       <>
         React es genial, pero tiene varios aspectos con los que no puede lidiar.
@@ -44,8 +44,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Rapidez",
-    Svg: require("@site/static/img/home/join.svg").default,
+    title: 'Rapidez',
+    Svg: require('@site/static/img/home/join.svg').default,
     description: (
       <>
         Si eres nuevo en el ecosistema de React, probablemente te cueste
@@ -58,7 +58,7 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--4")} style={{ margin: "1rem auto" }}>
+    <div className={clsx('col col--4')} style={{ margin: '1rem auto' }}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -73,7 +73,7 @@ function Feature({ Svg, title, description }) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className={clsx("container", styles.featuresGrid)}>
+      <div className={clsx('container', styles.featuresGrid)}>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
