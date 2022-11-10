@@ -1,3 +1,26 @@
+<div align="center">
+public/assets/screenshots/screenshot-3.webp
+[![reactlibs](static/img/LogoFiles/logo.png)](https://github.com/Tono2007/React-Libs)
+
+Encuentra informacion util, datos, herramientas y librerias
+
+ 
+<img alt="React open issues" src="hhttps://img.shields.io/github/stars/Tono2007/React-Libs?style=social">
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
+
+<p align="center">
+  <strong>
+  <a href="https://github.com/Tono2007/React-Libs">Sitio</a> •
+  <a href="https://github.com/Tono2007/React-Libs">Documentation</a>  
+  </strong>
+</p>
+
+</div>
+
+---
+
+<img alt="React open issues" src="https://img.shields.io/bitbucket/issues/Tono2007/React-Libs?style=flat-square">
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.

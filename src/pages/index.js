@@ -1,32 +1,71 @@
 import React from "react";
+import { useColorMode } from "@docusaurus/theme-common";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Head from "@docusaurus/Head";
-import logo from "@site/static/img/LogoFiles/logo-color-no-background.png";
+import logoColor from "@site/static/img/LogoFiles/logo-color-no-background.png";
+import logoWhite from "@site/static/img/LogoFiles/logo-white-no-background.png";
 
 import styles from "./index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const { colorMode } = useColorMode();
+  const logoSrc = colorMode === "dark" ? logoWhite : logoColor;
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <img src={logo} height="100px" />
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
+    <>
+      <header
+        className={clsx("hero ", styles.heroBanner)}
+        style={{
+          backgroundSize: "100% 100%",
+          backgroundImage: `url(https://res.cloudinary.com/hilnmyskv/image/upload/v1630315356/ui-library/hero/curves.svg)`,
+        }}
+      >
+        <div className={clsx("container", styles.heroContainer)}>
+          <img
+            src={logoSrc}
+            height="auto"
+            width="350px"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <h1 className="hero__title" style={{ display: "none" }}>
+            {siteConfig.title}
+          </h1>
+          <p
+            className="hero__subtitle"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >Mejora tu nivel  de desarrollo de React
+            {siteConfig.tagline}
+          </p>
+          <div
+            className={styles.buttons}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
           >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/intro"
+            >
+              Ver Recursos
+            </Link>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/intro"
+            >
+              Blog
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 
