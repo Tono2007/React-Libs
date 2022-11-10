@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const constants = require("./src/constants");
 
 const lightCodeTheme = require("prism-react-renderer/themes/nightOwl");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
@@ -8,8 +9,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "React-Libs",
-  tagline: "Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.",
-  url: "https://your-docusaurus-test-site.com",
+  tagline:
+    "Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.",
+  url: constants.siteData.siteUrl,
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -101,7 +103,7 @@ const config = {
             ],
           },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/blog", label: "Contruibidores", position: "left" },
+          { to: "/contributors", label: "Contribuidores", position: "left" },
 
           {
             type: "localeDropdown",
@@ -156,15 +158,15 @@ const config = {
             items: [
               {
                 label: "Ayudanos",
-                href: "https://github.com/Tono2007/React-Libs",
+                href: constants.siteData.siteRepo,
               },
               {
                 label: "Contribuidores",
-                to: "/docs/intro",
+                to: "/contributors",
               },
               {
                 label: "Issues",
-                to: "https://github.com/Tono2007/React-Libs/issues",
+                href: constants.siteData.repoIssues,
               },
               /* {
                   html: `
@@ -184,7 +186,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/Tono2007/React-Libs",
+                href: constants.siteData.siteRepo,
               },
               {
                 html: `
@@ -204,7 +206,7 @@ const config = {
           srcDark: "img/LogoFiles/logo-white-no-background.png",
           height: 200,
         },
-        copyright: `Copyright © ${new Date().getFullYear()} • React Libs, Inc. Built with Docusaurus.`,
+        copyright: `React Libs • ${new Date().getFullYear()}, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

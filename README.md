@@ -10,8 +10,8 @@ Encuentra informacion util, datos, herramientas y librerias
 
 <p align="center">
   <strong>
-  <a href="https://github.com/Tono2007/React-Libs">Sitio</a> •
-  <a href="https://github.com/Tono2007/React-Libs">Documentation</a>  
+  <a href="https://react-libs.vercel.app/">Sitio</a> •
+  <a href="https://react-libs.vercel.app/docs/intro">Documentation</a>  
   </strong>
 </p>
 

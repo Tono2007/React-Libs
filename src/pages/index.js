@@ -33,16 +33,15 @@ function HomepageHeader() {
             data-aos="fade-up"
             data-aos-duration="1000"
           />
-          <h1 className="hero__title" style={{ display: "none" }}>
-            {siteConfig.title}
-          </h1>
+          <h1 style={{ display: "none" }}>{siteConfig.title}</h1>
           <p
-            className="hero__subtitle"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
-          >Mejora tu nivel  de desarrollo de React
-            {siteConfig.tagline}
+            className={styles.heroSubtitle}
+          >
+            Mejora tu nivel de desarrollo de React
+            <span className={styles.heroTagline}>{siteConfig.tagline}</span>
           </p>
           <div
             className={styles.buttons}
@@ -58,10 +57,18 @@ function HomepageHeader() {
             </Link>
             <Link
               className="button button--primary button--lg"
-              to="/docs/intro"
+              to="/blog"
             >
               Blog
             </Link>
+            <span>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=Tono2007&amp;repo=React-Libs&amp;type=star&amp;count=true&amp;size=large"
+                width={160}
+                height={30}
+                title="GitHub Stars"
+              />
+            </span>
           </div>
         </div>
       </header>
