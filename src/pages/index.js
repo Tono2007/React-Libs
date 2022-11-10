@@ -48,7 +48,7 @@ function HomepageHeader() {
           data-aos-duration="1000"
           data-aos-delay="800"
         >
-          <Link className="button button--primary button--lg" to="/docs/intro">
+          <Link className="button button--primary button--lg" to="/docs">
             Ver Recursos
           </Link>
           <Link className="button button--primary button--lg" to="/blog">
