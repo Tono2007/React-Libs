@@ -1,16 +1,19 @@
 <div align="center">
-public/assets/screenshots/screenshot-3.webp
-[![reactlibs](static/img/LogoFiles/logo.png)](https://github.com/Tono2007/React-Libs)
 
-Encuentra informacion util, datos, herramientas y librerias
+<img alt="React open issues" src="static/img/LogoFiles/logo-color-no-background.png" width="50%">
 
-<img alt="React open issues" src="hhttps://img.shields.io/github/stars/Tono2007/React-Libs?style=social">
+Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.
+
+Mejora tu nivel de desarrollo de React
+
+<img alt="React open issues" src="https://img.shields.io/github/stars/Tono2007/React-Libs?style=social">
+
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 
 <p align="center">
   <strong>
   <a href="https://react-libs.vercel.app/">Sitio</a> •
-  <a href="https://react-libs.vercel.app/docs/intro">Documentation</a>  
+  <a href="https://react-libs.vercel.app/docs">Documentación</a>  
   </strong>
 </p>
 
@@ -30,20 +33,20 @@ Estoy muy contento de que estés leyendo esto, porque necesitamos desarrolladore
 
 Aquí hay algunos puntos importantes:
 
-- [React Libs](hhttps://react-libs.vercel.app/) aqui se encuentra nuestro sitio.
-- Bugs? [Issues](https://github.com/Tono2007/React-Libs/issues) aqiu puedes reportarlos.
-- Todo contenido que no sea de tu autoria debe estar **referenciado**.
+- [React Libs](https://react-libs.vercel.app/) aqui se encuentra nuestro sitio.
+- Bugs? [Issues](https://github.com/Tono2007/React-Libs/issues) aqui puedes reportarlos.
+- Todo contenido que no sea de tu autoria debe estar **referenciado/citado**.
 - Documentación: editing, writing, illustrating, example code.
 - Design: design, diagram system.
 - Development: site development,sandbox integration.
-- El dueño del repositorio puede escoger a quien agregar comp _miembro_ del repositorio.
+- El dueño del repositorio puede escoger a quien agregar como _miembro_ del repositorio.
 - Si es podible, testea los cambios visuales en las ultimas versiones de los navegadores mas populares, en escritorio y movil.
 
 También estamos agradecidos con todos los voluntarios que tradujeron React-Libs a otros idiomas.
 
 ## Submitting changes
 
-Envie una [GitHub Pull Request a React Libs](https://github.com/Tono2007/React-Libs/pull/new/main) con una lista clara de lo que ha hecho (lea más sobre [pull requests](http://help.github.com/pull-requests/)). Cuando envíe una pull request, nos encantaria si incluye ejemplos de código. Siga nuestras convenciones de codificación (a continuación) y asegúrese de que todos sus commits sean atómicos (una característica por commit).
+Envíe una [GitHub Pull Request a React Libs](https://github.com/Tono2007/React-Libs/pull/new/main) con una lista clara de lo que ha hecho (lea más sobre [pull requests](http://help.github.com/pull-requests/)). Cuando envíe una pull request, nos encantaria si agregas ejemplos de código. Siga nuestras convenciones de codificación (a continuación) y asegúrese de que todos sus commits sean atómicos (una característica por commit).
 
 Siempre escriba un mensaje de registro claro para sus commits. Los mensajes de una línea están bien para pequeños cambios.
 
