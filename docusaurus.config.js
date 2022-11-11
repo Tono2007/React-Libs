@@ -128,7 +128,6 @@ const config = {
             items: [
               { to: '/docs/category/react', label: 'React' },
               { to: '/docs/category/javascript', label: 'Javascript' },
-              { to: '/docs/category/html', label: 'HTML' },
               { to: '/docs/category/css', label: 'CSS' },
             ],
           },

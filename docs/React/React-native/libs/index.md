@@ -18,7 +18,7 @@ A React Native framework for making cross platform applications [URL](https://re
 ## react-native-vector-icons
 
 Customizable Icons for React Native with support for image source and full styling.
-[URL](react-native-vector-icons)
+[URL](https://github.com/oblador/react-native-vector-icons)
 [directory](https://oblador.github.io/react-native-vector-icons/)[directory](https://icons.expo.fyi/)
 
 ## nativebase
