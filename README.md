@@ -5,8 +5,15 @@
 Encuentra informacion util, datos, herramientas, bibliotecas, consejos, guias y mas.
 
 Mejora tu nivel de desarrollo de React
-
-<img alt="React open issues" src="https://img.shields.io/github/stars/Tono2007/React-Libs?style=social">
+<a href="https://github.com/Tono2007/React-Libs?style=social/issues">
+  <img alt="React open issues" src="https://img.shields.io/github/stars/Tono2007/React-Libs?style=social">
+</a>
+<a href="https://github.com/Tono2007/React-Libs/graphs/contributors">
+  <img alt="React contributors" src="https://img.shields.io/github/contributors/Tono2007/React-Libs">
+</a>
+<a href="https://github.com/Tono2007/React-Libs/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Tono2007/React-Libs?color=0088ff" />
+</a>
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 
