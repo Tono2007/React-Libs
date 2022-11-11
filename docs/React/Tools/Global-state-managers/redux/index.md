@@ -4,10 +4,8 @@ tags:
   - Bienvenida
   - Demo
   - Getting started
-title: PropTypes
+title: Redux
 ---
 
 
-# PropTypes
-
-fdfd
+# Redux

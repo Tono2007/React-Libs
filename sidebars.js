@@ -1,5 +1,152 @@
 const constants = require('./src/constants');
 
+const REACT_FRAMEWORKS = {
+  type: 'category',
+  label: 'Frameworks',
+  link: {
+    type: 'generated-index',
+    title: 'React Frameworks',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['hooks'],
+    image: '/img/LogoFiles/logo.png',
+  },
+  items: ['React/Frameworks/next', 'React/Frameworks/gastby'],
+};
+
+const REACT_HOOKS = {
+  type: 'category',
+  label: 'Hooks',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['hooks'],
+    image: '/img/LogoFiles/logo.png',
+  },
+  items: ['React/Hooks/useState', 'React/Hooks/useEffect'],
+};
+
+const REACT_GLOBAL_STATE_MANAGER = {
+  type: 'category',
+  label: 'Global state manager',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['hooks'],
+    image: '/img/LogoFiles/logo.png',
+  },
+  items: [
+    'React/Tools/Global-state-managers/redux/index',
+    'React/Tools/Global-state-managers/context/index',
+  ],
+};
+const REACT_TOOLS = {
+  type: 'category',
+  label: 'Tools',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['hooks'],
+    image: '/img/LogoFiles/logo.png',
+  },
+  items: [
+    'React/Tools/proptypes',
+    'React/Tools/libs/index',
+    REACT_GLOBAL_STATE_MANAGER,
+  ],
+};
+
+const REACT_NATIVE = {
+  type: 'category',
+  label: 'React Native',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['hooks'],
+    image: '/img/LogoFiles/logo.png',
+  },
+  items: ['React/React-native/react-native', 'React/React-native/libs/index'],
+};
+
+const REACT_SIDEBAR = {
+  type: 'category',
+  label: 'React',
+  collapsed: true,
+  link: {
+    type: 'generated-index',
+    title: 'React',
+    description: 'Aqui encontraras mucho contenido sobre React',
+    keywords: ['react', 'guides'],
+    image: '/img/logo.svg',
+  },
+  items: [
+    'React/Que-es-React',
+    REACT_FRAMEWORKS,
+    REACT_HOOKS,
+    REACT_TOOLS,
+    REACT_NATIVE,
+  ],
+};
+const CSS_SIDEBAR = {
+  type: 'category',
+  label: 'CSS',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['guides'],
+    image: '/img/logo.svg',
+  },
+  items: [
+    'CSS/colecciones-assets/index',
+    'CSS/Generadores-de-gradientes/index',
+    'CSS/herramientas/index',
+    'CSS/libs/index',
+  ],
+};
+const JS_SIDEBAR = {
+  type: 'category',
+  label: 'Javascript',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['guides'],
+    image: '/img/logo.svg',
+  },
+  items: [
+    'Javascript/libs/index',
+    {
+      type: 'category',
+      label: 'Frameworks',
+      link: {
+        type: 'generated-index',
+        title: 'Docusaurus Guides',
+        description:
+          "Let's learn about the most fimportant Docusaurus concepts!",
+        keywords: ['hooks'],
+        image: '/img/LogoFiles/logo.png',
+      },
+      items: ['Javascript/Frameworks/react'],
+    },
+  ],
+};
+const HTML_SIDEBAR = {
+  type: 'category',
+  label: 'HTML',
+  link: {
+    type: 'generated-index',
+    title: 'Docusaurus Guides',
+    description: "Let's learn about the most fimportant Docusaurus concepts!",
+    keywords: ['guides'],
+    image: '/img/logo.svg',
+  },
+  items: ['HTML/index'],
+};
+
 /**
  * Creating a sidebar enables you to:
  - create an ordered group of docs
@@ -22,131 +169,10 @@ const sidebars = {
 
   tutorialSidebar: [
     'bienvenido-doc',
-    {
-      type: 'category',
-      label: 'React',
-      collapsed: true,
-      link: {
-        type: 'generated-index',
-        title: 'React',
-        description: 'Aqui encontraras mucho contenido sobre React',
-        keywords: ['react', 'guides'],
-        image: '/img/logo.svg',
-      },
-      items: [
-        'React/Frameworks/next',
-        'React/Hooks/useState',
-        'React/Hooks/useEffect',
-        {
-          type: 'category',
-          label: 'Frameworks',
-          link: {
-            type: 'generated-index',
-            title: 'React Frameworks',
-            description:
-              "Let's learn about the most fimportant Docusaurus concepts!",
-            keywords: ['hooks'],
-            image: '/img/LogoFiles/logo.png',
-          },
-          items: ['React/Frameworks/next', 'React/Frameworks/gastby'],
-        },
-        {
-          type: 'category',
-          label: 'Hooks',
-          link: {
-            type: 'generated-index',
-            title: 'Docusaurus Guides',
-            description:
-              "Let's learn about the most fimportant Docusaurus concepts!",
-            keywords: ['hooks'],
-            image: '/img/LogoFiles/logo.png',
-          },
-          items: ['React/Hooks/useState', 'React/Hooks/useEffect'],
-        },
-        {
-          type: 'category',
-          label: 'Tools',
-          link: {
-            type: 'generated-index',
-            title: 'Docusaurus Guides',
-            description:
-              "Let's learn about the most fimportant Docusaurus concepts!",
-            keywords: ['hooks'],
-            image: '/img/LogoFiles/logo.png',
-          },
-          items: ['React/Tools/proptypes'],
-        },
-        {
-          type: 'category',
-          label: 'Libs',
-          link: {
-            type: 'generated-index',
-            title: 'Docusaurus Guides',
-            description:
-              "Let's learn about the most fimportant Docusaurus concepts!",
-            keywords: ['hooks'],
-            image: '/img/LogoFiles/logo.png',
-          },
-          items: [
-            'React/Frameworks/next',
-            'React/Hooks/useState',
-            'React/Hooks/useEffect',
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'HTML',
-      link: {
-        type: 'generated-index',
-        title: 'Docusaurus Guides',
-        description:
-          "Let's learn about the most fimportant Docusaurus concepts!",
-        keywords: ['guides'],
-        image: '/img/logo.svg',
-      },
-      items: [
-        'React/Frameworks/next',
-        'React/Hooks/useState',
-        'React/Hooks/useEffect',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Javascript',
-      link: {
-        type: 'generated-index',
-        title: 'Docusaurus Guides',
-        description:
-          "Let's learn about the most fimportant Docusaurus concepts!",
-        keywords: ['guides'],
-        image: '/img/logo.svg',
-      },
-      items: [
-        'React/Frameworks/next',
-        'React/Hooks/useState',
-        'React/Hooks/useEffect',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'CSS',
-      link: {
-        type: 'generated-index',
-        title: 'Docusaurus Guides',
-        description:
-          "Let's learn about the most fimportant Docusaurus concepts!",
-        keywords: ['guides'],
-        image: '/img/logo.svg',
-      },
-      items: [
-        'React/Frameworks/next',
-        'React/Hooks/useState',
-        'React/Hooks/useEffect',
-        'CSS/Generadores-de-gradientes/index',
-      ],
-    },
+    REACT_SIDEBAR,
+    JS_SIDEBAR,
+    CSS_SIDEBAR,
+    'HTML/index',
     'interes-doc',
     {
       type: 'link',

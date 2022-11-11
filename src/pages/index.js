@@ -40,7 +40,10 @@ function HomepageHeader() {
           className={styles.heroSubtitle}
         >
           Mejora tu nivel de desarrollo con React
-          <span className={styles.heroTagline}>{siteConfig.tagline}</span>
+          <span className={styles.heroTagline}>
+            {siteConfig.tagline}
+            <span>En español!!</span>
+          </span>
         </p>
         <div
           className={styles.buttons}

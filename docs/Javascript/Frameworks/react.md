@@ -4,10 +4,8 @@ tags:
   - Bienvenida
   - Demo
   - Getting started
-title: PropTypes
+title: React js
 ---
 
 
-# PropTypes
-
-fdfd
+# Congratulations! react

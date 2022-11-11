@@ -26,3 +26,7 @@ Repositorio con multiples preguntas sobre React, [Repo](https://github.com/midud
 ### React express
 
 Quieres una guia completa y rapida de React, [URL](https://www.react.express/)
+
+### javascriptpatterns
+
+JavaScript Patterns Workshop [URL](https://javascriptpatterns.vercel.app/patterns)
