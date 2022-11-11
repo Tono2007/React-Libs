@@ -1,6 +1,6 @@
 ---
 slug: long-blog-post
-title: Long Blog Post
+title: Antipatrones/malas practicas
 authors: endi
 tags: [hello, docusaurus]
 ---

@@ -10,7 +10,7 @@ id: bienvenido-doc
 slug: /
 ---
 
-# Tutorial Intro
+# Bienvenido !!
 
 ![Docusaurus logo](/img/LogoFiles/logo-color-no-background.png)
 

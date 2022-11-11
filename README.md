@@ -39,10 +39,13 @@ Aquí hay algunos puntos importantes:
 - Documentación: editing, writing, illustrating, example code.
 - Design: design, diagram system.
 - Development: site development,sandbox integration.
+- Docs id use -> `<docIdName>-doc` example: `welcome-doc`
 - El dueño del repositorio puede escoger a quien agregar como _miembro_ del repositorio.
 - Si es podible, testea los cambios visuales en las ultimas versiones de los navegadores mas populares, en escritorio y movil.
 
 También estamos agradecidos con todos los voluntarios que tradujeron React-Libs a otros idiomas.
+
+Si tienes alguna sugerencia, fork al repositorio y crea una pull request, o puedes crear un nuevo apartado en la pestañas de issues.
 
 ## Submitting changes
 

@@ -28,10 +28,9 @@ const sidebars = {
       collapsed: true,
       link: {
         type: 'generated-index',
-        title: 'Docusaurus Guides',
-        description:
-          "Let's learn about the most fimportant Docusaurus concepts!",
-        keywords: ['guides'],
+        title: 'React',
+        description: 'Aqui encontraras mucho contenido sobre React',
+        keywords: ['react', 'guides'],
         image: '/img/logo.svg',
       },
       items: [
@@ -40,7 +39,46 @@ const sidebars = {
         'React/Hooks/useEffect',
         {
           type: 'category',
+          label: 'Frameworks',
+          link: {
+            type: 'generated-index',
+            title: 'React Frameworks',
+            description:
+              "Let's learn about the most fimportant Docusaurus concepts!",
+            keywords: ['hooks'],
+            image: '/img/LogoFiles/logo.png',
+          },
+          items: ['React/Frameworks/next', 'React/Frameworks/gastby'],
+        },
+        {
+          type: 'category',
           label: 'Hooks',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most fimportant Docusaurus concepts!",
+            keywords: ['hooks'],
+            image: '/img/LogoFiles/logo.png',
+          },
+          items: ['React/Hooks/useState', 'React/Hooks/useEffect'],
+        },
+        {
+          type: 'category',
+          label: 'Tools',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most fimportant Docusaurus concepts!",
+            keywords: ['hooks'],
+            image: '/img/LogoFiles/logo.png',
+          },
+          items: ['React/Tools/proptypes'],
+        },
+        {
+          type: 'category',
+          label: 'Libs',
           link: {
             type: 'generated-index',
             title: 'Docusaurus Guides',
@@ -106,8 +144,10 @@ const sidebars = {
         'React/Frameworks/next',
         'React/Hooks/useState',
         'React/Hooks/useEffect',
+        'CSS/Generadores-de-gradientes/index',
       ],
     },
+    'interes-doc',
     {
       type: 'link',
       label: 'React Libs',

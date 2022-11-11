@@ -39,7 +39,7 @@ function HomepageHeader() {
           data-aos-delay="400"
           className={styles.heroSubtitle}
         >
-          Mejora tu nivel de desarrollo de React
+          Mejora tu nivel de desarrollo con React
           <span className={styles.heroTagline}>{siteConfig.tagline}</span>
         </p>
         <div

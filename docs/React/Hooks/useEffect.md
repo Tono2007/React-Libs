@@ -4,9 +4,9 @@ tags:
   - Bienvenida
   - Demo
   - Getting started
-title: Como usar use effect
+title: useEffect
 ---
 
-# useState!
+# useStateeffect!
 
 dfdf

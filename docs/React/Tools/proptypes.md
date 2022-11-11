@@ -4,9 +4,8 @@ tags:
   - Bienvenida
   - Demo
   - Getting started
-title: useState Hook
+title: PropTypes
 ---
 
-# useState!
 
-dfdf
+# PropTypes

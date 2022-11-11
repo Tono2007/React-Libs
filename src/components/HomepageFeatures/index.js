@@ -56,15 +56,22 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, index }) {
   return (
-    <div className={clsx('col col--4')} style={{ margin: '1rem auto' }}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+    <div
+      style={{ margin: '1rem auto' }}
+      className="col col--4 "
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
+    >
+      <div className={styles.featureCard}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );
@@ -76,7 +83,7 @@ export default function HomepageFeatures() {
       <div className={clsx('container', styles.featuresGrid)}>
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature key={idx} index={idx} {...props} />
           ))}
         </div>
       </div>

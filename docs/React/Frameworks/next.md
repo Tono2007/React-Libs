@@ -4,7 +4,7 @@ tags:
   - Bienvenida
   - Demo
   - Getting started
-title: Como usar next
+title: NextJs
 ---
 
 # Congratulations!

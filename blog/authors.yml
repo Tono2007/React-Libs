@@ -15,3 +15,9 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+
+antonioAyola:
+  name: Juan Antonio Ayola Cortes
+  title: React Libs maintainer
+  url: https://antonioayola.netlify.app/
+  image_url: https://antonioayola.netlify.app/static/media/me.bfcd553170a18dc82653.webp

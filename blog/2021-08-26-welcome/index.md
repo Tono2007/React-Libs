@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome
+title: Custom hooks
 authors: [slorber, yangshun]
 tags: [facebook, hello, docusaurus]
 ---
