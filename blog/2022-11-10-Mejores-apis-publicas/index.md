@@ -27,6 +27,10 @@ Pokemons
 
 [URL](https://fakestoreapi.com/)
 
+## Mockae
+
+[URL](https://mockae.com/)
+
 
 ---
 
